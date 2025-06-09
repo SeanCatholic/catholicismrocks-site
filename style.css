@@ -70,3 +70,9 @@ footer {
   color: #607f5b;
   margin-top: 2rem;
 }
+
+.logo-icon {
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
