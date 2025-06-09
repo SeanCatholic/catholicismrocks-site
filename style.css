@@ -1,0 +1,16 @@
+
+body {
+  font-family: sans-serif;
+  background-color: #fefefe;
+  color: #607f5b;
+  text-align: center;
+  padding: 2rem;
+}
+.logo {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+.featured-saint img {
+  width: 250px;
+  margin-top: 2rem;
+}
