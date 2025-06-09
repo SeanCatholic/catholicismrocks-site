@@ -1,16 +1,72 @@
 
 body {
-  font-family: sans-serif;
-  background-color: #fefefe;
-  color: #607f5b;
-  text-align: center;
-  padding: 2rem;
+    font-family: Arial, sans-serif;
+    background-color: #fefefe;
+    color: #607f5b;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
-.logo {
-  width: 120px;
-  margin-bottom: 1rem;
+
+.logo-header {
+    background-color: #d0ecca;
+    padding: 2rem 1rem;
 }
-.featured-saint img {
-  width: 250px;
-  margin-top: 2rem;
+
+.logo-icon {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+h1 {
+    color: #4d8845;
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: #607f5b;
+}
+
+.featured-saint {
+    margin: 2rem 0;
+}
+
+.featured-image {
+    width: 250px;
+    max-width: 90%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.carousel {
+    background-color: #bdbfbd;
+    padding: 2rem 1rem;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.carousel-container img {
+    width: 100px;
+    height: auto;
+    border-radius: 6px;
+}
+
+.saints-academy {
+    padding: 2rem 1rem;
+}
+
+footer {
+    background-color: #607f5b;
+    color: #fefefe;
+    padding: 1rem;
+    font-size: 0.9rem;
 }
