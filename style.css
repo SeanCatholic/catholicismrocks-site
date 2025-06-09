@@ -1,72 +1,67 @@
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fefefe;
-    color: #607f5b;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fefefe;
+  color: #607f5b;
 }
-
-.logo-header {
-    background-color: #d0ecca;
-    padding: 2rem 1rem;
+header {
+  background-color: #d0ecca;
+  text-align: center;
+  padding: 40px 20px;
 }
-
-.logo-icon {
-    width: 50px;
-    height: auto;
-    display: block;
-    margin: 0 auto 10px;
+.logo {
+  max-height: 80px;
+  margin-bottom: 15px;
 }
-
 h1 {
-    color: #4d8845;
-    font-size: 2rem;
-    margin: 0.5rem 0;
+  font-size: 2rem;
+  color: #4d8845;
 }
-
 .tagline {
-    font-size: 1rem;
-    color: #607f5b;
+  font-size: 1rem;
+  color: #607f5b;
 }
-
 .featured-saint {
-    margin: 2rem 0;
+  text-align: center;
+  background: white;
+  padding: 30px;
 }
-
-.featured-image {
-    width: 250px;
-    max-width: 90%;
-    height: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.featured-saint img {
+  max-width: 300px;
+  width: 80%;
+  border-radius: 10px;
 }
-
 .carousel {
-    background-color: #bdbfbd;
-    padding: 2rem 1rem;
+  background-color: #bdbfbd;
+  padding: 30px;
+  text-align: center;
 }
-
-.carousel-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
+.carousel h2 {
+  margin-bottom: 15px;
+  color: #4d8845;
 }
-
-.carousel-container img {
-    width: 100px;
-    height: auto;
-    border-radius: 6px;
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding: 10px;
 }
-
+.carousel-track img {
+  height: 150px;
+  border-radius: 8px;
+}
 .saints-academy {
-    padding: 2rem 1rem;
+  padding: 30px;
+  text-align: center;
 }
-
 footer {
-    background-color: #607f5b;
-    color: #fefefe;
-    padding: 1rem;
-    font-size: 0.9rem;
+  background-color: #607f5b;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+footer a {
+  color: #d0ecca;
+  text-decoration: none;
 }
