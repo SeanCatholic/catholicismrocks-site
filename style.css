@@ -2,8 +2,8 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to bottom, #f4f4f9, #e8ebf8);
-  color: #222;
+  background-color: #fefefe;
+  color: #607f5b;
   text-align: center;
   padding: 2rem;
 }
@@ -18,17 +18,21 @@ body {
   max-width: 300px;
   margin: 2rem auto;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  border: 4px solid #d0ecca;
 }
 
 h1 {
-  color: #4a2f8c;
+  color: #607f5b;
   font-size: 2.5rem;
 }
 
 .tagline {
   font-size: 1.2rem;
   margin-bottom: 1rem;
+  background-color: #d0ecca;
+  padding: 0.5rem;
+  border-radius: 8px;
 }
 
 .description {
@@ -39,28 +43,30 @@ h1 {
 .signup-form input {
   padding: 0.8rem;
   margin: 0.5rem;
-  border: 1px solid #aaa;
+  border: 1px solid #bdbfbd;
   border-radius: 6px;
   width: 80%;
   max-width: 300px;
+  color: #607f5b;
 }
 
 .signup-form button {
   padding: 0.8rem 2rem;
-  background-color: #4a2f8c;
+  background-color: #4d8845;
   color: white;
   border: none;
   border-radius: 6px;
   cursor: pointer;
   margin-top: 1rem;
+  font-weight: bold;
 }
 
 .signup-form button:hover {
-  background-color: #39216b;
+  background-color: #3c6d36;
 }
 
 footer {
   font-size: 0.9rem;
-  color: #555;
+  color: #607f5b;
   margin-top: 2rem;
 }
