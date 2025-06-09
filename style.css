@@ -76,3 +76,23 @@ footer {
   vertical-align: middle;
   margin-right: 12px;
 }
+
+
+.logo-large {
+  height: 160px;
+  margin-bottom: 20px;
+}
+
+
+.header-with-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.logo-center {
+  height: 120px;
+}
