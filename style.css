@@ -1,0 +1,37 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef8ec;
+  color: #234c2a;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+header {
+  padding: 2em;
+  background-color: #d6f0d2;
+}
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em;
+}
+.card {
+  border: 2px solid #337a3c;
+  border-radius: 10px;
+  width: 160px;
+  margin: 10px;
+  padding: 10px;
+  background: white;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+footer {
+  background-color: #437a55;
+  color: white;
+  padding: 1em 0;
+}
