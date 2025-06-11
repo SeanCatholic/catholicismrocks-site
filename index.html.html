@@ -5,15 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CatholicismRocks</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header { background: #1a1a1a; color: white; padding: 20px; text-align: center; position: sticky; top: 0; z-index: 1000; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
-    .hero { background: url('padre_pio_sticker.jpg') center/cover no-repeat; height: 100vh; color: white; display: flex; align-items: center; justify-content: center; text-align: center; }
-    .hero h1 { font-size: 3em; text-shadow: 2px 2px 5px #000; }
-    .cta-button { background: gold; color: #000; padding: 10px 20px; font-weight: bold; border: none; cursor: pointer; margin-top: 20px; }
-    footer { background: #f1f1f1; padding: 20px; text-align: center; }
-  </style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background: #1a1a1a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .hero {
+    background: url('st-joan-of-arc.png') center/cover no-repeat;
+    height: 100vh;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .hero-content {
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .hero-content h1 {
+    font-size: 2.5em;
+    margin: 0 0 10px 0;
+  }
+  .hero-content p {
+    margin: 0 0 20px 0;
+  }
+  .cta-button {
+    background: gold;
+    color: #000;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+</style>
+
 </head>
 <body>
   <header>
@@ -27,11 +73,14 @@
     </nav>
   </header>
 
-  <section class="hero" style="background: url('st-joan-of-arc.png') center/cover no-repeat;">
-  <h1>Discover the Saints Like Never Before</h1>
-  <p>A Marvel-style sticker album and formation journey for Catholic families, schools, and parishes.</p>
-  <button class="cta-button">Explore the Album</button>
+  <section class="hero">
+  <div class="hero-content">
+    <h1>Discover the Saints<br>Like Never Before</h1>
+    <p>A Marvel-style sticker album and formation journey for Catholic families, schools, and parishes.</p>
+    <button class="cta-button">Explore the Album</button>
+  </div>
 </section>
+
 
   <section id="album">
     <h2>The CatholicismRocks Sticker Album</h2>
