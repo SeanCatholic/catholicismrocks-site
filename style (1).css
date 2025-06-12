@@ -1,0 +1,68 @@
+/* General styling for body */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header styling */
+header.hero {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+/* Logo image */
+.logo {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+/* Hero image (St. Joan) */
+.hero-image {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Section styling */
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Saints Academy visuals */
+.banner img,
+.academy-intro img,
+.age-groups img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+/* Sticker samples layout */
+.samples-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.samples-grid img {
+  max-width: 160px;
+  height: auto;
+}
+
+/* Footer */
+footer.site-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
