@@ -8,7 +8,8 @@ body {
 }
 header {
   background-color: #d0ecca;
-  padding: 6px 20px;  /* Shrinks the top green bar */
+  padding: 0px 20px; 
+  overflow: hidden;
 }
 .header-container {
   display: flex;
