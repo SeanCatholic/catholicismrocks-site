@@ -8,13 +8,13 @@ body {
 }
 header {
   background-color: #d0ecca;
-  padding: 10px 40px;
+  padding: 6px 20px;  /* Shrinks the top green bar */
 }
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 40px;
+  padding: 6px 20px;
 }
 .logo {
   max-height: 180px;
