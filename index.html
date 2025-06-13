@@ -7,50 +7,50 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- HEADER with Logo -->
-  <header class="site-header">
-    <img src="images/CatholicismRocks_Logo_Transparent_WithText.png" alt="CatholicismRocks Logo" class="logo" />
+  <header class="main-header">
+    <img src="images/CatholicismRocks_Logo_Transparent_WithText.png" alt="CatholicismRocks Logo" class="logo-horizontal" />
+    <h1 class="tagline">Discover the Saints</h1>
+    <p class="sub-tagline">Explore our Sticker Album & Join the Saints Academy</p>
   </header>
 
-  <!-- HERO: Main Sticker Album Visual + Tagline -->
   <section class="hero">
     <img src="images/st-joan-of-arc.png" alt="St. Joan of Arc Hero" class="hero-image" />
-    <h1>Discover the Saints</h1>
-    <p>Explore our Sticker Album & Join the Saints Academy</p>
   </section>
 
-  <!-- STICKER SAMPLE PREVIEW -->
-  <section class="sample-stickers">
+  <section class="sticker-carousel">
     <h2>Sample Stickers</h2>
-    <div class="sticker-grid">
-      <img src="images/peter.png" alt="St. Peter" />
-      <img src="images/augustine.png" alt="St. Augustine" />
-      <img src="images/faustina.png" alt="St. Faustina" />
-      <img src="images/joan.png" alt="St. Joan of Arc" />
-      <img src="images/stephen.png" alt="St. Stephen" />
+    <div class="carousel-container">
+      <button class="carousel-button left">&#10094;</button>
+      <div class="carousel-track">
+        <img src="images/peter.png" alt="St. Peter" />
+        <img src="images/augustine.png" alt="St. Augustine" />
+        <img src="images/faustina.png" alt="St. Faustina" />
+        <img src="images/joan.png" alt="St. Joan of Arc" />
+        <img src="images/stephen.png" alt="St. Stephen" />
+      </div>
+      <button class="carousel-button right">&#10095;</button>
     </div>
   </section>
 
-  <!-- SAINTS ACADEMY PROMO -->
   <section class="saints-academy">
     <h2>Join the Saints Academy</h2>
     <p>Spiritual Formation for Children Ages 6–13+</p>
-    <div class="academy-promo">
+    <div class="academy-images">
       <img src="images/saints-academy-intro.png" alt="Join the Saints in Training" />
       <img src="images/saints-academy-groups.png" alt="Saints Academy Age Groups" />
     </div>
   </section>
 
-  <!-- DONATE SECTION -->
-  <section class="donate-call">
+  <section class="donate">
     <h2>Help Bring This to Life</h2>
     <p>Support our mission to inspire children and families through the stories of the Saints.</p>
     <a href="#" class="donate-button">Donate Now</a>
   </section>
 
-  <!-- FOOTER -->
-  <footer class="site-footer">
-    <p>© 2025 CatholicismRocks. All rights reserved.</p>
+  <footer>
+    <p>&copy; 2025 CatholicismRocks. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
