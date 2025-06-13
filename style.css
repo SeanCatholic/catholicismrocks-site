@@ -22,7 +22,7 @@ header {
   overflow: visible;         /* 🔹 new: allow logo to spill out */
 }
 .logo {
-  max-height: 160px;   /* Bigger than before */
+  max-height: 200px;   /* Bigger than before */
   height: auto;
   padding-left: 20px;
   position: relative;
