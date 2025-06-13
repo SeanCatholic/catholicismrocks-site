@@ -53,9 +53,8 @@ header {
 }
 .hero {
   display: flex;
-  align-items: flex-start;
   justify-content: center;
-  gap: 40px;
+  align-items: center;
   padding: 60px 20px;
   background-color: #fefefe;
 }
