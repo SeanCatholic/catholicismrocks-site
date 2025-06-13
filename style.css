@@ -24,7 +24,17 @@ header {
   height: auto;
   padding-left: 20px;
 }
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
+.org-name {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #607f5b;
+}
 .nav {
   display: flex;
   gap: 30px;
