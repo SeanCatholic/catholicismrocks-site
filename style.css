@@ -6,19 +6,16 @@ body {
   background-color: #fefefe;
   color: #607f5b;
 }
-
 header {
   background-color: #d0ecca;
   padding: 10px 40px;
 }
-
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 40px;
+  padding: 8px 40px;
 }
-
 .logo {
   max-height: 180px;
   height: auto;
