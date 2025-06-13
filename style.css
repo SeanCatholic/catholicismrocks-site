@@ -22,11 +22,11 @@ header {
   overflow: visible;         /* 🔹 new: allow logo to spill out */
 }
 .logo {
-  max-height: 200px;   /* Bigger than before */
+  max-height: 220px;
   height: auto;
   padding-left: 20px;
   position: relative;
-  top: 0px;           /* Lift it slightly above the header */
+  top: 10px;
 }
 }
 .header-left {
