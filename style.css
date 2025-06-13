@@ -58,8 +58,16 @@ header {
   padding: 60px 20px;
   background-color: #fefefe;
 }
-.hero img {
+.hero img 
+.hero-image-container {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+} 
+ .hero-image {
   max-height: 700px;
+  transform: translateX(-150px); /* Adjust this number as needed */
   width: auto;
   margin: 0 auto;
   display: block;
