@@ -59,8 +59,10 @@ header {
   background-color: #fefefe;
 }
 .hero img {
-  max-width: 90%;
-  height: auto;
+  max-height: 700px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
   border: 5px solid #4d8845;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
