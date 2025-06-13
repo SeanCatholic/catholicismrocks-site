@@ -16,11 +16,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 40px;
+  padding: 20px 60px;
 }
 
 .logo {
-  max-height: 100px;
+  max-height: 160px;
   height: auto;
   padding-left: 20px;
 }
@@ -31,10 +31,10 @@ header {
 }
 
 .nav a {
+  font-size: 1rem;
   text-decoration: none;
   color: #607f5b;
   font-weight: bold;
-  font-size: 1rem;
 }
 
 .hero {
