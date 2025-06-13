@@ -22,10 +22,11 @@ header {
   overflow: visible;         /* 🔹 new: allow logo to spill out */
 }
 .logo {
-  position: absolute;        /* 🔹 new: to float it */
-  top: -30px;                /* 🔹 new: move it up to spill */
-  left: 0;                   /* 🔹 new: stick to the left */
-  height: 120px;             /* 🔹 adjust this if needed */
+  max-height: 100px;
+  height: auto;
+  padding-left: 20px;
+  position: relative;
+  top: -20px;
 }
 }
 .header-left {
