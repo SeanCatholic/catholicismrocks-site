@@ -1,44 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>CatholicismRocks - Sticker Album & Saints Academy</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="hero">
-    <img src="images/logo-horizontal.png" alt="CatholicismRocks Logo" class="logo" />
-  <img src="images/st-joan-of-arc.png" alt="St. Joan of Arc" class="hero-image" />
-    <h1>Discover the Saints</h1>
-    <p>Explore our Sticker Album & Join the Saints Academy</p>
-  </header>
+<section class="sticker-showcase">
+  <h2>Sample Stickers</h2>
+  <div class="sticker-scroll">
+    <img src="images/joan.png" alt="St. Joan of Arc" />
+    <img src="images/peter.png" alt="St. Peter" />
+    <img src="images/augustine.png" alt="St. Augustine" />
+    <img src="images/faustina.png" alt="St. Faustina" />
+    <img src="images/stephen.png" alt="St. Stephen" />
+  </div>
+</section>
 
-  <section class="banner">
-    <img src="images/saints-academy-banner.png" alt="Saints Academy Banner" />
-  </section>
+<style>
+.sticker-showcase {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
 
-  <section class="academy-intro">
-    <img src="images/saints-academy-intro.png" alt="Join the Saints in Training" />
-  </section>
+.sticker-showcase h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
 
-  <section class="age-groups">
-    <img src="images/saints-academy-groups.png" alt="Saints Academy Age Groups" />
-  </section>
+.sticker-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 10px;
+  scroll-behavior: smooth;
+}
 
-  <section class="sticker-samples">
-    <h2>Sample Stickers</h2>
-    <div class="samples-grid">
-      <img src="images/joan.png" alt="St. Joan of Arc" />
-      <img src="images/peter.png" alt="St. Peter" />
-      <img src="images/augustine.png" alt="St. Augustine" />
-      <img src="images/faustina.png" alt="St. Faustina" />
-      <img src="images/stephen.png" alt="St. Stephen" />
-    </div>
-  </section>
+.sticker-scroll::-webkit-scrollbar {
+  height: 8px;
+}
 
-  <footer class="site-footer">
-    <p>&copy; 2025 CatholicismRocks. All rights reserved.</p>
-  </footer>
-</body>
-</html>
+.sticker-scroll::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.sticker-scroll img {
+  height: 360px;
+  flex: 0 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.sticker-scroll img:hover {
+  transform: scale(1.05);
+}
+</style>
