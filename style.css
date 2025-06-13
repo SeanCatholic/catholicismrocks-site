@@ -51,21 +51,21 @@ header {
   color: #607f5b;
   font-weight: bold;
 }
-
 .hero {
-  text-align: center;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
   background-color: #fefefe;
-  padding: 40px 20px;
 }
-
 .hero img {
-  max-width: 80%;
-  height: auto;
+  max-height: 700px;
+  width: auto;
   border: 5px solid #4d8845;
   border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
-
 .section {
   padding: 40px 20px;
   text-align: center;
