@@ -26,7 +26,7 @@ header {
   height: auto;
   padding-left: 20px;
   position: relative;
-  top: -30px;           /* Lift it slightly above the header */
+  top: 0px;           /* Lift it slightly above the header */
 }
 }
 .header-left {
