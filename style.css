@@ -16,16 +16,17 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0;
+  padding: 0 20px;
+  height: 80px;              /* 🔹 new: fixed small height */
+  position: relative;        /* 🔹 new: for absolute logo */
+  overflow: visible;         /* 🔹 new: allow logo to spill out */
 }
-
 .logo {
-  max-height: 60px;
-  height: auto;
-  padding-left: 20px;
+  position: absolute;        /* 🔹 new: to float it */
+  top: -30px;                /* 🔹 new: move it up to spill */
+  left: 0;                   /* 🔹 new: stick to the left */
+  height: 120px;             /* 🔹 adjust this if needed */
 }
-}
-
 }
 .header-left {
   display: flex;
