@@ -9,15 +9,25 @@ body {
 
 header {
   background-color: #d0ecca;
-  padding: 20px;
-  text-align: center;
+  padding: 10px 40px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
- display: inline-block;
-  max-width: 280px;
+  max-height: 60px;
   height: auto;
-  margin: 20px auto 10px;
+}
+
+.nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #607f5b;
+  font-weight: bold;
 }
 
 .hero {
