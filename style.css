@@ -8,7 +8,7 @@ body {
 }
 header {
   background-color: #d0ecca;
-  padding: 0px 20px; 
+  padding: 6px 20px; 
   overflow: hidden;
 }
 .header-container {
@@ -20,7 +20,7 @@ header {
 
 }
 .logo {
-  max-height: 120px;
+  max-height: 80px;
   height: auto;
   padding-left: 20px;
 }
