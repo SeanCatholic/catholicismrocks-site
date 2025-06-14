@@ -118,17 +118,22 @@ position: relative;
 position: relative;
   }
 .hero-image {
-  max-height: 88vh;
+  max-height: 90vh;
   width: auto;
   height: auto;
   margin: 0;
+  display: block;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  border: 5px solid #4d8845;
+  border-radius: 0px;
 }
  .cta-box {
   position: absolute;
-  bottom: 40px;
-  left: 40px;
+  bottom: 60px;
+  left: -20px;
   transform: none;
   margin: 0;
+max-width: 320px;
 }
 }
 
