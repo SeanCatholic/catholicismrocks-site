@@ -128,12 +128,8 @@ position: relative;
   border-radius: 0px;
 }
  .cta-box {
-  position: absolute;
-  bottom: 60px;
-  left: -20px;
-  transform: none;
-  margin: 0;
-max-width: 320px;
+ align-self: flex-end;
+padding-left: 40px;
 }
 }
 
