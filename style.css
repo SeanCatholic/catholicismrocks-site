@@ -54,6 +54,7 @@ header {
 .hero {
   display: flex;
   justify-content: center;
+max-width: 1200px;
   align-items: center;
   position: relative; /* This is key */
   padding: 60px 20px;
