@@ -4,34 +4,86 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CatholicismRocks</title>
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #fefefe;
+        color: #4d8845;
+      }
+
+      header {
+        background-color: #d0ecca;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .hero {
+        position: relative;
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+      }
+
+      .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      .cta-box {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        background-color: #d0ecca;
+        padding: 24px 32px;
+        border-radius: 12px;
+        max-width: 360px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .cta-box h1 {
+        font-size: 28px;
+        margin-top: 0;
+        margin-bottom: 16px;
+        line-height: 1.2;
+      }
+
+      .cta-box p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.4;
+      }
+
+      @media (max-width: 768px) {
+        .cta-box {
+          bottom: 16px;
+          left: 16px;
+          max-width: 90%;
+          padding: 20px;
+        }
+
+        .cta-box h1 {
+          font-size: 22px;
+        }
+
+        .cta-box p {
+          font-size: 14px;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
-      <div class="header">
-        <h1 class="logo">CatholicismRocks</h1>
-        <nav>
-          <a href="#">Sticker Album</a>
-          <a href="#">Saints Academy</a>
-          <a href="#">Support</a>
-          <a href="#">Blog</a>
-          <a href="#">Forum</a>
-          <a href="#">Contact</a>
-        </nav>
-      </div>
+      <h1>CatholicismRocks</h1>
     </header>
 
-    <main>
-      <section class="hero">
-        <img src="/images/saint-joan-of-arc.png" alt="St. Joan of Arc" />
-        <div class="cta">
-          <h1>Discover the Saints Like Never Before</h1>
-          <p>
-            A Marvel-style sticker album and formation journey for Catholic families, schools, and parishes.
-          </p>
-          <button>Explore the Album</button>
-        </div>
-      </section>
-    </main>
+    <section class="hero">
+      <img src="images/st-joan.png" alt="St. Joan of Arc" />
+      <div class="cta-box">
+        <h1>Collect the Saints.<br />Live the Adventure.</h1>
+        <p>Faith comes to life in our Sticker Album & Saints Academy.</p>
+      </div>
+    </section>
   </body>
 </html>
