@@ -8,6 +8,7 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      background-color: #ffffff;
     }
 
     .navbar {
@@ -30,26 +31,29 @@
       font-weight: bold;
     }
 
-    .hero {
-      display: flex;
-      margin-top: 60px; /* height of navbar */
-      height: calc(100vh - 60px);
+    .main-content {
+      padding-top: 60px;
+      position: relative;
+      min-height: 100vh;
     }
 
-    .hero-left {
-      background-color: #ffffff;
-      flex: 1;
-      display: flex;
-      align-items: flex-end;
-      padding: 40px;
+    .saint-image {
+      display: block;
+      margin: 0 auto;
+      max-height: calc(100vh - 60px);
+      height: auto;
     }
 
     .cta-box {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
       background-color: #4d4d4d;
       color: white;
       padding: 30px;
       border-radius: 8px;
       max-width: 360px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     }
 
     .cta-box h1 {
@@ -72,24 +76,11 @@
       cursor: pointer;
     }
 
-    .hero-right {
-      flex: 1;
-      background-image: url('st-joan-hero.png');
-      background-size: cover;
-      background-position: center;
-    }
-
     @media (max-width: 768px) {
-      .hero {
-        flex-direction: column;
-      }
-      .hero-left, .hero-right {
-        flex: none;
-        width: 100%;
-        height: 50vh;
-      }
       .cta-box {
-        margin: auto;
+        position: static;
+        margin: 20px auto;
+        display: block;
       }
     }
   </style>
@@ -104,15 +95,13 @@
     <a href="#">Contact</a>
   </div>
 
-  <div class="hero">
-    <div class="hero-left">
-      <div class="cta-box">
-        <h1>Discover the Saints Like Never Before</h1>
-        <p>A Marvel-style sticker album and formation journey for Catholic families, schools, and parishes.</p>
-        <button>Explore the Album</button>
-      </div>
+  <div class="main-content">
+    <img src="st-joan-hero.png" alt="St. Joan of Arc" class="saint-image" />
+    <div class="cta-box">
+      <h1>Discover the Saints Like Never Before</h1>
+      <p>A Marvel-style sticker album and formation journey for Catholic families, schools, and parishes.</p>
+      <button>Explore the Album</button>
     </div>
-    <div class="hero-right"></div>
   </div>
 </body>
 </html>
