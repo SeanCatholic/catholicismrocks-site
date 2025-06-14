@@ -4,86 +4,43 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CatholicismRocks</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #fefefe;
-        color: #4d8845;
-      }
-
-      header {
-        background-color: #d0ecca;
-        padding: 20px;
-        text-align: center;
-      }
-
-      .hero {
-        position: relative;
-        width: 100%;
-        max-width: 1280px;
-        margin: 0 auto;
-      }
-
-      .hero img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
-      .cta-box {
-        position: absolute;
-        bottom: 30px;
-        left: 30px;
-        background-color: #d0ecca;
-        padding: 24px 32px;
-        border-radius: 12px;
-        max-width: 360px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      }
-
-      .cta-box h1 {
-        font-size: 28px;
-        margin-top: 0;
-        margin-bottom: 16px;
-        line-height: 1.2;
-      }
-
-      .cta-box p {
-        margin: 0;
-        font-size: 16px;
-        line-height: 1.4;
-      }
-
-      @media (max-width: 768px) {
-        .cta-box {
-          bottom: 16px;
-          left: 16px;
-          max-width: 90%;
-          padding: 20px;
-        }
-
-        .cta-box h1 {
-          font-size: 22px;
-        }
-
-        .cta-box p {
-          font-size: 14px;
-        }
-      }
-    </style>
   </head>
-  <body>
-    <header>
-      <h1>CatholicismRocks</h1>
+  <body style="margin: 0; font-family: Arial, sans-serif; background-color: #fefefe;">
+    <header
+      style="background-color: #607f5b; color: #fefefe; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;"
+    >
+      <div style="font-weight: bold">CatholicismRocks</div>
+      <nav>
+        <a href="#" style="margin-right: 15px; color: #fefefe; text-decoration: none">Sticker Album</a>
+        <a href="#" style="margin-right: 15px; color: #fefefe; text-decoration: none">Saints Academy</a>
+        <a href="#" style="margin-right: 15px; color: #fefefe; text-decoration: none">Support</a>
+        <a href="#" style="margin-right: 15px; color: #fefefe; text-decoration: none">Blog</a>
+        <a href="#" style="margin-right: 15px; color: #fefefe; text-decoration: none">Forum</a>
+        <a href="#" style="color: #fefefe; text-decoration: none">Contact</a>
+      </nav>
     </header>
 
-    <section class="hero">
-      <img src="images/st-joan.png" alt="St. Joan of Arc" />
-      <div class="cta-box">
-        <h1>Collect the Saints.<br />Live the Adventure.</h1>
-        <p>Faith comes to life in our Sticker Album & Saints Academy.</p>
+    <main style="display: flex; justify-content: center; padding: 0; position: relative;">
+      <img
+        src="/images/saint-joan-of-arc.png"
+        alt="St. Joan of Arc"
+        style="max-width: 100%; height: auto; display: block"
+      />
+
+      <div
+        style="position: absolute; bottom: 40px; left: 40px; background-color: #4d4d4d; color: #ffffff; padding: 20px; width: 440px; border-radius: 8px"
+      >
+        <h1 style="margin-top: 0; font-size: 24px">Discover the Saints Like Never Before</h1>
+        <p style="margin: 10px 0 20px">
+          A Marvel-style sticker album and formation journey for Catholic families,
+          schools, and parishes.
+        </p>
+        <button
+          style="background-color: #4d8845; color: #ffffff; padding: 8px 14px; border: none; font-weight: bold; cursor: pointer"
+        >
+          Explore the Album
+        </button>
       </div>
-    </section>
+    </main>
   </body>
 </html>
