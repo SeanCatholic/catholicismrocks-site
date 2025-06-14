@@ -46,23 +46,21 @@
       font-weight: 500;
     }
 
-    .hero {
-      position: relative;
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+   .hero {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--white); /* Or whatever bg you prefer */
+}
 
-    .hero-image {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
+.hero-image {
+  height: 100%;
+  width: auto;
+  max-height: 100vh;
+}
     .cta-box {
       position: absolute;
       left: 2%;
