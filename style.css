@@ -56,7 +56,7 @@ header {
   justify-content: center;
   align-items: center;
   position: relative; /* This is key */
-  padding: 60px 20px;
+  padding: 100px 20px;
   background-color: #fefefe;
 }
 }
@@ -117,8 +117,8 @@ position: relative;
     justify-content: center;
 position: relative;
   }
- .hero-image {
-  max-height: 700px;
+.hero-image {
+  max-height: 88vh;
   width: auto;
   height: auto;
   margin: 0;
