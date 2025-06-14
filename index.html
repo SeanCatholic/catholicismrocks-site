@@ -1,132 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CatholicismRocks Landing Page</title>
-  <style>
-  :root {
-    --white: #fefefe;
-    --light-green: #d0ecca;
-    --deep-olive: #607f5b;
-    --soft-grey: #bdbfbd;
-    --vibrant-green: #4d8845;
-  }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CatholicismRocks</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: white;
+      }
 
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+      header {
+        background-color: #607f5b;
+        color: white;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+      }
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: var(--white);
-    color: var(--deep-olive);
-  }
+      nav a {
+        color: white;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: normal;
+      }
 
-  header {
-    background-color: var(--deep-olive);
-    color: var(--white);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-  }
+      .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+      }
 
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
+      .hero img {
+        max-width: 100%;
+        height: auto;
+      }
 
-  nav a {
-    color: var(--white);
-    text-decoration: none;
-    margin-left: 1.5rem;
-    font-weight: 500;
-    font-size: 1rem;
-  }
+      .cta-box {
+        background-color: #3a3a3a;
+        color: white;
+        padding: 24px 30px;
+        width: 400px;
+        border-radius: 10px;
+        position: relative;
+        left: 0;
+        margin-top: -60px;
+        margin-bottom: 60px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+      }
 
-  .hero {
-    position: relative;
-    max-width: 700px;
-    margin: 0 auto;
-    padding-bottom: 2rem;
-  }
+      .cta-box strong {
+        font-size: 20px;
+        display: block;
+        margin-bottom: 10px;
+      }
 
-  .hero-image {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
+      .cta-box p {
+        margin: 0;
+        font-size: 14px;
+      }
 
-  .cta-box {
-  position: absolute;
-  left: 2%;
-  bottom: 4%;
-  background-color: #444;
-  color: #fff;
-  width: 300px;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  font-family: Arial, sans-serif;
-}
+      .cta-box button {
+        margin-top: 16px;
+        padding: 10px 16px;
+        background-color: #4d8845;
+        color: white;
+        border: none;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>CatholicismRocks</div>
+      <nav>
+        <a href="#">Sticker Album</a>
+        <a href="#">Saints Academy</a>
+        <a href="#">Support</a>
+        <a href="#">Blog</a>
+        <a href="#">Forum</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
 
-.cta-box h1 {
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin: 0 0 0.6rem 0;
-  line-height: 1.2;
-}
-
-.cta-box p {
-  font-size: 0.85rem;
-  line-height: 1.3;
-  margin-bottom: 0.9rem;
-  color: #ddd;
-}
-
-.cta-box button {
-  background-color: #f4d313;
-  color: #000;
-  font-size: 0.85rem;
-  font-weight: bold;
-  border: none;
-  padding: 0.4rem 0.9rem;
-  border-radius: 0.3rem;
-  cursor: pointer;
-}
-
-  @media (max-width: 768px) {
-    .cta-box {
-      width: 90%;
-      left: 5%;
-      bottom: 5%;
-    }
-  }
-</style>
-
-</head>
-<body>
-  <header>
-    <div class="logo">CatholicismRocks</div>
-    <nav>
-      <a href="#sticker">Sticker Album</a>
-      <a href="#academy">Saints Academy</a>
-      <a href="#support">Support</a>
-      <a href="#blog">Blog</a>
-      <a href="#forum">Forum</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <main class="hero">
-    <img src="images/saint-joan-of-arc.png" alt="St. Joan of Arc" class="hero-image" />
-    <div class="cta-box">
-      <h1>Discover the Saints Like Never Before</h1>
-      <p>A Marvel-style sticker album and formation journey for Catholic families, schools, and parishes.</p>
-      <button>Explore the Album</button>
+    <div class="hero">
+      <img src="images/joan.png" alt="St. Joan of Arc" />
+      <div class="cta-box">
+        <strong>Discover the Saints Like Never Before</strong>
+        <p>A Marvel-style sticker album and formation journey for Catholic families, schools, and parishes.</p>
+        <button>Explore the Album</button>
+      </div>
     </div>
-  </main>
-</body>
+  </body>
 </html>
