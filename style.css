@@ -1,186 +1,89 @@
-/* CatholicismRocks Style */
-
-body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #fefefe;
-  color: #607f5b;
-}
-header {
-  background-color: #d0ecca;
-  padding: 4px 20px;
-  overflow: hidden;
-}
-
-.header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-  height: 80px;              /* 🔹 new: fixed small height */
-  position: relative;        /* 🔹 new: for absolute logo */
-  overflow: visible;         /* 🔹 new: allow logo to spill out */
-}
-.logo {
-  max-height: 220px;
-  height: auto;
-  padding-left: 20px;
-  position: relative;
-  top: 0px;
-}
-}
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.org-name {
-  font-size: 1.4rem;
-  font-weight: bold;
-  color: #607f5b;
-}
-.nav {
-  display: flex;
-  gap: 30px;
-}
-
-.nav a {
-  font-size: 1rem;
-  text-decoration: none;
-  color: #607f5b;
-  font-weight: bold;
-}
-.hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative; /* This is key */
-  padding: 100px 20px;
-  background-color: #fefefe;
-}
-}
-
-.image-wrapper {
-  max-width: 550px;
-  width: 100%;
-}
-.hero-image {
-  max-width: 100%;
-  height: auto;
-  max-height: 700px;
-  display: block;
-  margin: 0 auto;
-  border: 5px solid #4d8845;
-  border-radius: 10px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-}
-.section {
-  padding: 40px 20px;
-  text-align: center;
-  border-bottom: 2px solid #d0ecca;
-}
-.hero-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-  padding: 40px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-position: relative;
-}
-.cta-box {
-  background-color: #4d4d4d;
-  color: white;
-  padding: 30px;
-  border-radius: 8px;
-  max-width: 350px;
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
-  text-align: left;
-}
-.cta-button {
-  background-color: #f4c900;
-  color: black;
-  font-weight: bold;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 4px;
-  display: inline-block;
-  margin-top: 15px;
-}
-@media (min-width: 1024px) {
-  .hero-wrapper {
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: center;
-position: relative;
-  }
-.hero-image {
-  max-height: 90vh;
-  width: auto;
-  height: auto;
-  margin: 0;
-  display: block;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  border: 5px solid #4d8845;
-  border-radius: 0px;
-}
- .cta-box {
- align-self: flex-end;
-padding-left: 40px;
-}
-}
-
-@media (max-width: 480px) {
-  .hero-image {
-    max-height: 500px;
-  }
-
-  .cta-box {
-    padding: 20px;
-    font-size: 0.95rem;
-  }
-}
-@media (max-width: 768px) {
-  .hero-wrapper {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .hero-image {
-    max-height: 600px;
-  }
-
-  .cta-box {
-    max-width: 90%;
-    text-align: center;
+<style>
+  body {
     margin: 0;
-    transform: none;
+    font-family: Arial, sans-serif;
   }
-}
-.section h2 {
-  color: #4d8845;
-}
 
-.sticker-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-.sticker-row img {
-  max-width: 200px;
-  height: auto;
-  border: 2px solid #607f5b;
-  border-radius: 8px;
-  background-color: #fefefe;
-}
-footer {
-  background-color: #607f5b;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
+  .navbar {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .hero {
+    display: flex;
+    margin-top: 60px; /* height of navbar */
+    height: calc(100vh - 60px);
+  }
+
+  .hero-left {
+    background-color: #ffffff;
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px;
+  }
+
+  .cta-box {
+    background-color: #4d4d4d;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 360px;
+  }
+
+  .cta-box h1 {
+    font-size: 28px;
+    margin: 0 0 10px;
+  }
+
+  .cta-box p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .cta-box button {
+    background-color: #f2c300;
+    color: black;
+    font-weight: bold;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .hero-right {
+    flex: 1;
+    background-image: url('st-joan-hero.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+    }
+    .hero-left, .hero-right {
+      flex: none;
+      width: 100%;
+      height: 50vh;
+    }
+    .cta-box {
+      margin: auto;
+    }
+  }
+</style>
