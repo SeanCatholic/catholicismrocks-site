@@ -67,13 +67,14 @@ header {
 }
 
 .hero-image {
-  max-height: 620px; /* Adjusted to match your reference */
+  max-height: 700px;
   width: auto;
   margin: 0 auto;
   display: block;
   border: 5px solid #4d8845;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 30px; /* NEW: pulls image higher on page */
 }
 .section {
   padding: 40px 20px;
@@ -81,15 +82,17 @@ header {
   border-bottom: 2px solid #d0ecca;
 }
 .cta-box {
-  position: absolute;
-  bottom: 40px;
-  left: 40px;
   background-color: #4d4d4d;
   color: white;
-  padding: 35px;
+  padding: 30px;
   border-radius: 8px;
-  max-width: 360px;
+  max-width: 380px; /* WAS 320px */
+  font-size: 1rem;
+  margin-top: -100px; /* NEW: pull it up */
+  margin-left: 40px;  /* slight tweak */
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
 }
 .cta-button {
   background-color: #f4c900;
