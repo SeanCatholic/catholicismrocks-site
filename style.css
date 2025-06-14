@@ -69,31 +69,36 @@ header {
 .hero-image {
   max-height: 700px;
   width: auto;
-  margin: 0 auto;
-  display: block;
+  height: auto;
   border: 5px solid #4d8845;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-  margin-top: 30px; /* NEW: pulls image higher on page */
+  display: block;
+  margin: 0 auto;
 }
 .section {
   padding: 40px 20px;
   text-align: center;
   border-bottom: 2px solid #d0ecca;
 }
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
 .cta-box {
   background-color: #4d4d4d;
   color: white;
   padding: 30px;
   border-radius: 8px;
-  max-width: 380px; /* WAS 320px */
-  font-size: 1rem;
-  margin-top: -100px; /* NEW: pull it up */
-  margin-left: 40px;  /* slight tweak */
+  max-width: 350px;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
-  position: relative;
-  z-index: 2;
+  text-align: left;
 }
+
 .cta-button {
   background-color: #f4c900;
   color: black;
@@ -103,6 +108,31 @@ header {
   border-radius: 4px;
   display: inline-block;
   margin-top: 15px;
+}
+@media (max-width: 768px) {
+  .hero-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .hero-image {
+    max-height: 600px;
+  }
+
+  .cta-box {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image {
+    max-height: 500px;
+  }
+
+  .cta-box {
+    padding: 20px;
+    font-size: 0.95rem;
+  }
 }
 
 .section h2 {
