@@ -89,6 +89,7 @@ header {
   padding: 40px 20px;
   max-width: 1000px;
   margin: 0 auto;
+position: relative;
 }
 .cta-box {
   background-color: #4d4d4d;
@@ -115,16 +116,19 @@ header {
     align-items: flex-end;
     justify-content: center;
   }
-  .hero-image {
-    max-height: 700px;
-    margin: 0;
-  }
-
+ .hero-image {
+  max-height: 700px;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
  .cta-box {
-    margin-left: -80px;
-    margin-bottom: 20px;
-    transform: translateY(40px);
-  }
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  transform: none;
+  margin: 0;
+}
 }
 
 @media (max-width: 480px) {
