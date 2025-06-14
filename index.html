@@ -1,60 +1,118 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>CatholicismRocks – Sticker Album</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CatholicismRocks</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #1a1a1a;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: flex-start;
+      gap: 30px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      display: flex;
+      margin-top: 60px; /* height of navbar */
+      height: calc(100vh - 60px);
+    }
+
+    .hero-left {
+      background-color: #ffffff;
+      flex: 1;
+      display: flex;
+      align-items: flex-end;
+      padding: 40px;
+    }
+
+    .cta-box {
+      background-color: #4d4d4d;
+      color: white;
+      padding: 30px;
+      border-radius: 8px;
+      max-width: 360px;
+    }
+
+    .cta-box h1 {
+      font-size: 28px;
+      margin: 0 0 10px;
+    }
+
+    .cta-box p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .cta-box button {
+      background-color: #f2c300;
+      color: black;
+      font-weight: bold;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .hero-right {
+      flex: 1;
+      background-image: url('st-joan-hero.png');
+      background-size: cover;
+      background-position: center;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+      .hero-left, .hero-right {
+        flex: none;
+        width: 100%;
+        height: 50vh;
+      }
+      .cta-box {
+        margin: auto;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header class="main-header">
-  <div class="header-container">
-    <div class="header-left">
-      <img src="images/CatholicismRocks_Logo_Horizontal_Transparent_WithText.png" alt="CatholicismRocks Logo" class="logo">
-    </div>
-    <nav class="nav">
-      <a href="#album">Sticker Album</a>
-      <a href="#academy">Saints Academy</a>
-      <a href="#donate">Donate</a>
-    </nav>
+  <div class="navbar">
+    <a href="#">Sticker Album</a>
+    <a href="#">Saints Academy</a>
+    <a href="#">Support</a>
+    <a href="#">Blog</a>
+    <a href="#">Forum</a>
+    <a href="#">Contact</a>
   </div>
-</header>
-    <main>
-<section class="hero">
-  <div class="hero-wrapper">
-    <img src="images/st-joan-of-arc.png" alt="St. Joan of Arc" class="hero-image" />
-    <div class="cta-box">
-      <h2>Discover the Saints Like Never Before</h2>
-      <p>A Marvel-style sticker album and formation journey for Catholic families, schools, and parishes.</p>
-      <a href="#album" class="cta-button">Explore the Album</a>
+
+  <div class="hero">
+    <div class="hero-left">
+      <div class="cta-box">
+        <h1>Discover the Saints Like Never Before</h1>
+        <p>A Marvel-style sticker album and formation journey for Catholic families, schools, and parishes.</p>
+        <button>Explore the Album</button>
+      </div>
     </div>
+    <div class="hero-right"></div>
   </div>
-</section>
-        <section class="samples">
-            <h2>Sample Stickers</h2>
-            <div class="sticker-row">
-                <img src="images/peter.png" alt="St. Peter">
-                <img src="images/augustine.png" alt="St. Augustine">
-                <img src="images/faustina.png" alt="St. Faustina">
-                <img src="images/stephen.png" alt="St. Stephen">
-                <img src="images/joan.png" alt="St. Joan of Arc">
-            </div>
-        </section>
-
-        <section class="academy" id="academy">
-            <h2>Saints Academy</h2>
-            <p>Faith formation through stories, symbols, and sacrament-centered activities. Designed by age, built for depth.</p>
-        </section>
-
-        <section class="donate" id="donate">
-            <h2>Help Bring This Project to Life</h2>
-            <p>Your support helps us print albums, deliver to schools, and expand our mission. Every donation matters.</p>
-            <a href="#" class="donate-button">Donate Now</a>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 CatholicismRocks. All rights reserved.</p>
-    </footer>
 </body>
 </html>
