@@ -165,20 +165,81 @@ button:hover {
     padding: 8px 12px;
     width: 100%;
   }
+}.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: #607f5b;
+}
+
+.nav-logo {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 8px 0;
+    background-color: #4d8845;
+    text-align: center;
+    border-radius: 5px;
+  }
 }
   </style>
 </head>
 <body>
   <header>
-    <div style="font-weight: bold">CatholicismRocks</div>
-    <nav>
+  <nav>
+  <div class="nav-container">
+    <div class="nav-logo">CatholicismRocks</div>
+    <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
       <a href="#album">Sticker Album</a>
       <a href="#academy">Saints Academy</a>
       <a href="#support">Support</a>
       <a href="#blog">Blog</a>
       <a href="#forum">Forum</a>
       <a href="#contact">Contact</a>
-    </nav>
+    </div>
+  </div>
+</nav>
+
   </header>
 
   <main class="hero">
@@ -236,5 +297,11 @@ button:hover {
   <footer>
     &copy; 2025 CatholicismRocks. All rights reserved.
   </footer>
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.classList.toggle('active');
+  }
+</script>
 </body>
 </html>
