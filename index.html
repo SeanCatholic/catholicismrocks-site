@@ -5,38 +5,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CatholicismRocks</title>
   <style>
-html {
-  scroll-behavior: smooth;
-}
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: Arial, sans-serif;
       background-color: #fefefe;
       color: #333;
     }
+
     header {
       background-color: #607f5b;
       padding: 10px;
+    }
+
+    .nav-container {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
+      padding: 10px;
+      background-color: #607f5b;
     }
-    nav a {
+
+    .nav-logo {
       color: white;
-      margin: 0 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .nav-toggle {
+      display: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 10px;
+    }
+
+    .nav-links a {
+      color: white;
       text-decoration: none;
       font-weight: bold;
     }
+
     .hero {
       position: relative;
-      text-align: left;
+      text-align: center;
     }
+
     .hero img {
       width: 100%;
       max-width: 700px;
       display: block;
       margin: 0 auto;
     }
+
     .cta-box {
       position: absolute;
       top: 65%;
@@ -48,19 +76,30 @@ html {
       border-radius: 5px;
       transform: translateY(-50%);
     }
-    .cta-box button {
-      margin-top: 10px;
+
+    .cta-box button,
+    button,
+    .green-button {
       background-color: #4d8845;
       color: white;
       padding: 10px 15px;
       border: none;
       border-radius: 3px;
       cursor: pointer;
+      margin-top: 10px;
+      text-align: center;
     }
+
+    .green-button:hover,
+    button:hover {
+      background-color: #3a6d37;
+    }
+
     section {
-  padding: 60px 20px;
-  text-align: center;
-}
+      padding: 40px 20px;
+      text-align: center;
+    }
+
     .sticker-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -68,163 +107,60 @@ html {
       max-width: 1000px;
       margin: 0 auto;
     }
+
     .sticker-grid img {
       width: 100%;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
+
     .section-dark {
       background-color: #d0ecca;
     }
+
     footer {
       background-color: #607f5b;
       color: white;
       text-align: center;
       padding: 20px;
     }
-button {
-  background-color: #4d8845;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #3a6d37;
-.green-button {
-  display: inline-block;
-  text-decoration: none;
-  background-color: #4d8845;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-}
-.green-button:hover {
-  background-color: #3a6d37;
-}
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 10px 0 0 0;
-  }
+    /* MOBILE RESPONSIVE */
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: block;
+      }
 
-  .hero img {
-    max-width: 100%;
-    height: auto;
-  }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
 
-  .cta-box {
-    position: static;
-    transform: none;
-    margin: 20px auto;
-    text-align: center;
-  }
+      .nav-links.active {
+        display: flex;
+      }
 
-  .sticker-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-  }
+      .nav-links a {
+        padding: 8px 0;
+        background-color: #4d8845;
+        text-align: center;
+        border-radius: 5px;
+      }
 
-  .green-button {
-    display: inline-block;
-    margin-top: 10px;
-    text-align: center;
-    width: 100%;
-    max-width: 240px;
-  }
-
-  section {
-    padding: 40px 20px;
-  }
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    margin: 10px 0 0 0;
-  }
-
-  nav a {
-    margin: 5px 0;
-    padding: 8px 12px;
-    width: 100%;
-  }
-}.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 10px;
-  background-color: #607f5b;
-}
-
-.nav-logo {
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.nav-toggle {
-  display: none;
-  font-size: 24px;
-  color: white;
-  cursor: pointer;
-}
-
-.nav-links {
-  gap: 10px;
-}
-
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links a {
-    padding: 8px 0;
-    background-color: #4d8845;
-    text-align: center;
-    border-radius: 5px;
-  }
-}
+      .cta-box {
+        position: static;
+        transform: none;
+        margin: 20px auto;
+        text-align: center;
+      }
+    }
   </style>
 </head>
 <body>
-  <header>
-  <nav>
+
+<header>
   <div class="nav-container">
     <div class="nav-logo">CatholicismRocks</div>
     <div class="nav-toggle" onclick="toggleMenu()">☰</div>
@@ -237,70 +173,70 @@ button:hover {
       <a href="#contact">Contact</a>
     </div>
   </div>
-</nav>
+</header>
 
-  </header>
+<main class="hero">
+  <img src="/images/saint-joan-of-arc.png" alt="St. Joan of Arc">
+  <div class="cta-box">
+    <h1 style="margin-top: 0; font-size: 20px; font-weight: bold;">Discover the Saints Like Never Before</h1>
+    <p style="font-size: 14px; line-height: 1.5">
+      A Marvel-style sticker album and formation journey for Catholic families, schools, and parishes.
+    </p>
+    <button>Explore the Album</button>
+  </div>
+</main>
 
-  <main class="hero">
-    <img src="/images/saint-joan-of-arc.png" alt="St. Joan of Arc">
-    <div class="cta-box">
-      <h1 style="margin-top: 0; font-size: 20px; font-weight: bold">Discover the Saints Like Never Before</h1>
-      <p style="font-size: 14px; line-height: 1.5">
-        A Marvel-style sticker album and formation journey for Catholic families, schools, and parishes.
-      </p>
-      <button>Explore the Album</button>
-    </div>
-  </main>
+<section id="album">
+  <h2>Sticker Samples</h2>
+  <p style="font-size: 14px">A few of the saints featured in Volume One</p>
+  <div class="sticker-grid">
+    <img src="/images/peter.png" alt="St. Peter">
+    <img src="/images/augustine.png" alt="St. Augustine">
+    <img src="/images/faustina.png" alt="St. Faustina">
+    <img src="/images/joan.png" alt="St. Joan of Arc">
+    <img src="/images/stephen.png" alt="St. Stephen">
+  </div>
+</section>
 
-  <section id="album">
-   <h2>Sticker Samples</h2>
-<p style="font-size: 14px;">A few of the saints featured in Volume One</p>
-    <div class="sticker-grid">
-      <img src="/images/peter.png" alt="St. Peter">
-      <img src="/images/augustine.png" alt="St. Augustine">
-      <img src="/images/faustina.png" alt="St. Faustina">
-      <img src="/images/joan.png" alt="St. Joan of Arc">
-      <img src="/images/stephen.png" alt="St. Stephen">
-    </div>
-  </section>
+<section id="academy" class="section-dark">
+  <h2>Saints Academy</h2>
+  <p>Formation by age and Sacrament – Lightbearers to Truthbearers, growing in holiness with the saints.</p>
+  <button onclick="location.href='#academy'" class="green-button">Join the Academy</button>
+</section>
 
-  <section id="academy" class="section-dark">
-    <h2>Saints Academy</h2>
-    <p>Formation by age and Sacrament — Lightbearers to Truthbearers, growing in holiness with the saints.</p>
- <button onclick="location.href='#academy'" class="green-button">Join the Academy</button>
-  </section>
+<section id="support">
+  <h2>Support CatholicismRocks</h2>
+  <p>Help us bring the saints to every Catholic family.</p>
+  <button onclick="location.href='#support'" class="green-button">Make a Gift</button>
+</section>
 
-  <section id="support">
-    <h2>Support CatholicismRocks</h2>
-    <p>Help us bring the saints to every Catholic family.</p>
-<button onclick="location.href='#support'" class="green-button">Make a Gift</button>
-  </section>
-
-  <section id="blog" class="section-dark">
-    <h2>From the Blog</h2>
-    <p>Stories, reflections, and formation from the frontlines of Catholic culture.</p>
+<section id="blog" class="section-dark">
+  <h2>From the Blog</h2>
+  <p>Stories, reflections, and formation from the frontlines of Catholic culture.</p>
   <button onclick="location.href='#blog'" class="green-button">Read the Blog</button>
-  </section>
+</section>
 
-  <section id="forum">
-    <h2>Join the Forum</h2>
-    <p>Ask questions, share ideas, and connect with others building the mission.</p>
-   <button onclick="location.href='#forum'" class="green-button">Visit the Forum</button>
-  </section>
+<section id="forum">
+  <h2>Join the Forum</h2>
+  <p>Ask questions, share ideas, and connect with others building the mission.</p>
+  <button onclick="location.href='#forum'" class="green-button">Visit the Forum</button>
+</section>
 
-  <section id="contact" class="section-dark">
-    <h2>Contact Us</h2>
-    <p>Email us anytime: <strong>sean@catholicismrocks.org</strong></p>
-  </section>
+<section id="contact" class="section-dark">
+  <h2>Contact Us</h2>
+  <p>Email us anytime: <strong>sean@catholicismrocks.org</strong></p>
+</section>
 
-  <footer>
-    &copy; 2025 CatholicismRocks. All rights reserved.
-  </footer>
+<footer>
+  &copy; 2025 CatholicismRocks. All rights reserved.
+</footer>
+
 <script>
   function toggleMenu() {
     const nav = document.getElementById('navLinks');
     nav.classList.toggle('active');
   }
 </script>
+
 </body>
 </html>
