@@ -105,9 +105,49 @@ button:hover {
 .green-button:hover {
   background-color: #3a6d37;
 }
-;
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0 0 0;
+  }
+
+  .hero img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cta-box {
+    position: static;
+    transform: none;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .sticker-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .green-button {
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 240px;
+  }
+
+  section {
+    padding: 40px 20px;
+  }
 }
-}
+
   </style>
 </head>
 <body>
