@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CatholicismRocks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     html {
       scroll-behavior: smooth;
     }
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Inter', sans-serif;
       background-color: #fefefe;
       color: #333;
     }
 
     header {
       background-color: #607f5b;
-      padding: 10px;
+      padding: 10px 0;
     }
 
     .nav-container {
@@ -25,14 +28,15 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      padding: 10px;
-      background-color: #607f5b;
+      padding: 10px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .nav-logo {
       color: white;
-      font-weight: bold;
-      font-size: 18px;
+      font-weight: 800;
+      font-size: 20px;
     }
 
     .nav-toggle {
@@ -44,59 +48,76 @@
 
     .nav-links {
       display: flex;
-      gap: 10px;
+      gap: 15px;
     }
 
     .nav-links a {
       color: white;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #d0ecca;
     }
 
     .hero {
       position: relative;
       text-align: center;
+      padding: 60px 20px 40px;
     }
 
     .hero img {
       width: 100%;
-      max-width: 700px;
+      max-width: 600px;
       display: block;
       margin: 0 auto;
     }
 
     .cta-box {
       position: absolute;
-      top: 65%;
+      top: 55%;
       left: 50px;
-      background-color: #3c3c3c;
+      background-color: rgba(0, 0, 0, 0.8);
       color: white;
-      padding: 20px;
+      padding: 25px;
       max-width: 420px;
-      border-radius: 5px;
+      border-radius: 10px;
       transform: translateY(-50%);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
-    .cta-box button,
-    button,
+    .cta-box h1 {
+      font-size: 24px;
+      margin: 0 0 10px;
+      font-weight: 800;
+    }
+
+    .cta-box p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
     .green-button {
       background-color: #4d8845;
       color: white;
-      padding: 10px 15px;
+      padding: 10px 20px;
       border: none;
-      border-radius: 3px;
+      border-radius: 5px;
       cursor: pointer;
-      margin-top: 10px;
-      text-align: center;
+      font-weight: 600;
+      font-size: 14px;
+      margin-top: 15px;
+      transition: background-color 0.3s;
     }
 
-    .green-button:hover,
-    button:hover {
+    .green-button:hover {
       background-color: #3a6d37;
     }
 
     section {
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
 
@@ -110,8 +131,8 @@
 
     .sticker-grid img {
       width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
     }
 
     .section-dark {
@@ -123,6 +144,7 @@
       color: white;
       text-align: center;
       padding: 20px;
+      font-size: 14px;
     }
 
     /* MOBILE RESPONSIVE */
@@ -143,7 +165,7 @@
       }
 
       .nav-links a {
-        padding: 8px 0;
+        padding: 10px 0;
         background-color: #4d8845;
         text-align: center;
         border-radius: 5px;
@@ -152,7 +174,7 @@
       .cta-box {
         position: static;
         transform: none;
-        margin: 20px auto;
+        margin: 30px auto;
         text-align: center;
       }
     }
@@ -178,17 +200,15 @@
 <main class="hero">
   <img src="/images/saint-joan-of-arc.png" alt="St. Joan of Arc">
   <div class="cta-box">
-    <h1 style="margin-top: 0; font-size: 20px; font-weight: bold;">Discover the Saints Like Never Before</h1>
-    <p style="font-size: 14px; line-height: 1.5">
-      A Marvel-style sticker album and formation journey for Catholic families, schools, and parishes.
-    </p>
-    <button>Explore the Album</button>
+    <h1>Discover the Saints Like Never Before</h1>
+    <p>A Marvel-style sticker album and formation journey for Catholic families, schools, and parishes.</p>
+    <button class="green-button">Explore the Album</button>
   </div>
 </main>
 
 <section id="album">
   <h2>Sticker Samples</h2>
-  <p style="font-size: 14px">A few of the saints featured in Volume One</p>
+  <p>A few of the saints featured in Volume One</p>
   <div class="sticker-grid">
     <img src="/images/peter.png" alt="St. Peter">
     <img src="/images/augustine.png" alt="St. Augustine">
