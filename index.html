@@ -1,207 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A bold Catholic sticker album and Saints Academy inspiring the next generation of saints. Discover, collect, and live the faith." />
-    <title>CatholicismRocks – Meet the Saints. Change the World.</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" />
-    <style>
-      body {
-        margin: 0;
-        font-family: 'Inter', sans-serif;
-        background-color: #fefefe;
-        color: #000;
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CatholicismRocks</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fefefe;
+      color: #333;
+    }
+
+    header {
+      background-color: #607f5b;
+      padding: 10px;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 10px;
+      background-color: #607f5b;
+    }
+
+    .nav-logo {
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .nav-toggle {
+      display: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 10px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .hero {
+      position: relative;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .cta-box {
+      position: absolute;
+      top: 65%;
+      left: 50px;
+      background-color: #3c3c3c;
+      color: white;
+      padding: 20px;
+      max-width: 420px;
+      border-radius: 5px;
+      transform: translateY(-50%);
+    }
+
+    .cta-box button,
+    button,
+    .green-button {
+      background-color: #4d8845;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    .green-button:hover,
+    button:hover {
+      background-color: #3a6d37;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .sticker-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .sticker-grid img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .section-dark {
+      background-color: #d0ecca;
+    }
+
+    footer {
+      background-color: #607f5b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* MOBILE RESPONSIVE */
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: block;
       }
 
-      header {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 8px 0;
         background-color: #4d8845;
-        color: white;
-        padding: 1rem 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        text-align: center;
+        border-radius: 5px;
       }
 
-      header h1 {
-        font-size: 1.5rem;
-        margin: 0;
-      }
-
-      nav a {
-        color: white;
-        text-decoration: none;
-        margin-left: 1.5rem;
-        font-weight: 600;
-      }
-
-      .hero {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        padding: 2rem;
+      .cta-box {
+        position: static;
+        transform: none;
+        margin: 20px auto;
         text-align: center;
       }
+    }
+  </style>
+</head>
+<body>
 
-      .hero-text {
-        max-width: 600px;
-        background-color: #d0ecca;
-        padding: 2rem;
-        border-radius: 1rem;
-        margin-top: 1rem;
-      }
+<header>
+  <div class="nav-container">
+    <div class="nav-logo">CatholicismRocks</div>
+    <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="#album">Sticker Album</a>
+      <a href="#academy">Saints Academy</a>
+      <a href="#support">Support</a>
+      <a href="#blog">Blog</a>
+      <a href="#forum">Forum</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</header>
 
-      .hero-text h1 {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        font-weight: 800;
-      }
+<main class="hero">
+  <img src="/images/saint-joan-of-arc.png" alt="St. Joan of Arc">
+  <div class="cta-box">
+    <h1 style="margin-top: 0; font-size: 20px; font-weight: bold;">Discover the Saints Like Never Before</h1>
+    <p style="font-size: 14px; line-height: 1.5">
+      A Marvel-style sticker album and formation journey for Catholic families, schools, and parishes.
+    </p>
+    <button>Explore the Album</button>
+  </div>
+</main>
 
-      .hero-text p {
-        font-size: 1rem;
-        font-weight: 500;
-        margin-bottom: 1.5rem;
-      }
+<section id="album">
+  <h2>Sticker Samples</h2>
+  <p style="font-size: 14px">A few of the saints featured in Volume One</p>
+  <div class="sticker-grid">
+    <img src="/images/peter.png" alt="St. Peter">
+    <img src="/images/augustine.png" alt="St. Augustine">
+    <img src="/images/faustina.png" alt="St. Faustina">
+    <img src="/images/joan.png" alt="St. Joan of Arc">
+    <img src="/images/stephen.png" alt="St. Stephen">
+  </div>
+</section>
 
-      .hero-text button {
-        background-color: #4d8845;
-        color: white;
-        border: none;
-        padding: 0.75rem 1.5rem;
-        border-radius: 0.5rem;
-        font-size: 1rem;
-        cursor: pointer;
-        font-weight: 600;
-      }
+<section id="academy" class="section-dark">
+  <img src="/images/saints-academy-banner.png" alt="Saints Academy Banner" style="width: 100%; max-width: 1000px; margin: 0 auto; display: block;">
+  <div style="text-align: center; margin-top: 20px;">
+    <button onclick="location.href='#academy'" class="green-button">Join the Saints Academy</button>
+  </div>
+</section>
 
-      .hero img {
-        max-width: 100%;
-        height: auto;
-        border-radius: 1rem;
-      }
+<section id="support">
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <img src="/images/make-a-gift-banner-optimized.jpg" alt="Make a Gift Banner" style="width: 100%; height: auto; display: block;" />
+  </div>
+  <h2>Support CatholicismRocks</h2>
+  <p>Help us bring the saints to every Catholic family.</p>
+  <button onclick="location.href='#support'" class="green-button">Make a Gift</button>
+</section>
 
-      @media (min-width: 768px) {
-        .hero {
-          flex-direction: row;
-          text-align: left;
-          padding: 4rem;
-        }
+<section id="blog" class="section-dark">
+  <h2>From the Blog</h2>
+  <p>Stories, reflections, and formation from the frontlines of Catholic culture.</p>
+  <button onclick="location.href='#blog'" class="green-button">Read the Blog</button>
+</section>
 
-        .hero-text {
-          margin-top: 0;
-          margin-left: 2rem;
-        }
-      }
+<section id="forum">
+  <h2>Join the Forum</h2>
+  <p>Ask questions, share ideas, and connect with others building the mission.</p>
+  <button onclick="location.href='#forum'" class="green-button">Visit the Forum</button>
+</section>
 
-      .section {
-        padding: 4rem 2rem;
-        text-align: center;
-      }
+<section id="contact" class="section-dark">
+  <h2>Contact Us</h2>
+  <p>Email us anytime: <strong>sean@catholicismrocks.org</strong></p>
+</section>
 
-      .section h2 {
-        font-size: 1.75rem;
-        margin-bottom: 1rem;
-        font-weight: 700;
-      }
+<footer>
+  &copy; 2025 CatholicismRocks. All rights reserved.
+</footer>
 
-      .section p {
-        font-size: 1.1rem;
-        max-width: 700px;
-        margin: 0 auto 2rem;
-      }
+<script>
+  function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.classList.toggle('active');
+  }
+</script>
 
-      .sample-stickers {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        padding: 1rem 0;
-      }
-
-      .sample-stickers img {
-        width: 160px;
-        height: auto;
-        border-radius: 0.5rem;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      }
-
-      footer {
-        background-color: #607f5b;
-        color: white;
-        padding: 2rem;
-        text-align: center;
-      }
-
-      footer a {
-        color: #d0ecca;
-        text-decoration: none;
-        font-weight: 600;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>CatholicismRocks</h1>
-      <nav>
-        <a href="#">Sticker Album</a>
-        <a href="#">Saints Academy</a>
-        <a href="#">Donate</a>
-        <a href="#">Blog</a>
-        <a href="#">Forum</a>
-      </nav>
-    </header>
-
-    <section class="hero">
-      <img src="/images/joan-of-arc.png" alt="St. Joan of Arc CatholicismRocks Sticker" />
-      <div class="hero-text">
-        <h1>Discover the Saints. Transform the Culture.</h1>
-        <p>The CatholicismRocks Sticker Album and Saints Academy bring Catholic heroes to life through bold visuals and timeless truth.</p>
-        <button>Join the Movement</button>
-      </div>
-    </section>
-
-    <section class="section" style="background-color:#bdbfbd;">
-      <h2>What’s Inside?</h2>
-      <p>One mission. Five themes. Meet the saints who changed the world — and inspire the next generation to do the same.</p>
-      <div class="sample-stickers">
-        <img src="/images/st-peter.png" alt="St. Peter – Twelve Apostles" />
-        <img src="/images/st-stephen.png" alt="St. Stephen – Early Church Martyrs" />
-        <img src="/images/st-augustine.png" alt="St. Augustine – Church Fathers" />
-        <img src="/images/st-joan-of-arc.png" alt="St. Joan of Arc – Warrior Saints" />
-        <img src="/images/st-faustina.png" alt="St. Faustina – Mystics and Visionaries" />
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Saints Academy</h2>
-      <p>The Saints Academy is where kids become Saints in Training. Age-specific paths, weekly saint spotlights, and activities rooted in virtue — all designed to nurture lifelong faith formation.</p>
-      <button>Explore the Academy</button>
-    </section>
-
-    <section class="section" style="background-color:#d0ecca;">
-      <h2>Support the Mission</h2>
-      <p>Your donation helps us put the CatholicismRocks Sticker Album and Saints Academy into the hands of more families, schools, and parishes around the world.</p>
-      <button>Donate Now</button>
-    </section>
-
-    <section class="section">
-      <h2>From Our Blog</h2>
-      <p>Reflections, behind-the-scenes stories, and saint-inspired wisdom from the CatholicismRocks team.</p>
-      <button>Read the Blog</button>
-    </section>
-
-    <section class="section" style="background-color:#bdbfbd;">
-      <h2>Join the Conversation</h2>
-      <p>Our forums are a space for Catholic educators, parents, and youth to share, support, and connect in faith.</p>
-      <button>Visit the Forums</button>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 CatholicismRocks. All rights reserved.</p>
-      <p>
-        <a href="#">Privacy Policy</a> | <a href="#">Contact Us</a>
-      </p>
-    </footer>
-  </body>
+</body>
 </html>
